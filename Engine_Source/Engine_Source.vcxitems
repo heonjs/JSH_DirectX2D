@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{3f76dd12-0c48-438b-8ebb-1952be6ebf8c}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Application.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Canvas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Component.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ConstantBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Engine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Entity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Enums.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JSHGraphics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GraphicsDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GraphicsDevice_DX11.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JSHInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Layer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Material.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JSHMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MeshRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Renderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Resource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Resourcemng.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Scene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SceneManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Shader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JSHTime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Transform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Application.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Component.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ConstantBuffer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Entity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GraphicsDevice_DX11.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)JSHInput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Layer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Material.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)JSHMath.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MeshRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Renderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Resource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Resourcemng.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Scene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SceneManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Shader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)JSHTime.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Transform.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JSH_DirectX2D", "JSH_DirectX2D\JSH_DirectX2D.vcxproj", "{D9D1140F-C6F5-42AF-9256-1D547DED20FE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine_Source", "Engine_Source\Engine_Source.vcxitems", "{3F76DD12-0C48-438B-8EBB-1952BE6EBF8C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shader_Source", "Shader_Source\Shader_Source.vcxitems", "{EDF36108-4FF6-4DB5-84D2-4017E02BA68D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9D1140F-C6F5-42AF-9256-1D547DED20FE}.Debug|x64.ActiveCfg = Debug|x64
+		{D9D1140F-C6F5-42AF-9256-1D547DED20FE}.Debug|x64.Build.0 = Debug|x64
+		{D9D1140F-C6F5-42AF-9256-1D547DED20FE}.Debug|x86.ActiveCfg = Debug|Win32
+		{D9D1140F-C6F5-42AF-9256-1D547DED20FE}.Debug|x86.Build.0 = Debug|Win32
+		{D9D1140F-C6F5-42AF-9256-1D547DED20FE}.Release|x64.ActiveCfg = Release|x64
+		{D9D1140F-C6F5-42AF-9256-1D547DED20FE}.Release|x64.Build.0 = Release|x64
+		{D9D1140F-C6F5-42AF-9256-1D547DED20FE}.Release|x86.ActiveCfg = Release|Win32
+		{D9D1140F-C6F5-42AF-9256-1D547DED20FE}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB69443B-A4D3-4964-B693-333E9B6CA474}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Engine_Source\Engine_Source.vcxitems*{3f76dd12-0c48-438b-8ebb-1952be6ebf8c}*SharedItemsImports = 9
+		Engine_Source\Engine_Source.vcxitems*{d9d1140f-c6f5-42af-9256-1d547ded20fe}*SharedItemsImports = 4
+		Shader_Source\Shader_Source.vcxitems*{edf36108-4ff6-4db5-84d2-4017e02ba68d}*SharedItemsImports = 9
+	EndGlobalSection
+EndGlobal
