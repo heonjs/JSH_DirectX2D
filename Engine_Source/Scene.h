@@ -1,5 +1,5 @@
 #pragma once
-#include "Enums.h"
+#include "JSHEnums.h"
 #include "Entity.h"
 #include "Layer.h"
 
@@ -15,7 +15,7 @@ namespace JSH
 
 		virtual void Initialize();
 		virtual void Update();
-		virtual void FixedUpdate();
+		virtual void LateUpdate();
 		virtual void Render();
 
 		Layer* GetLayer(UINT index) { return&mLayers[index]; }

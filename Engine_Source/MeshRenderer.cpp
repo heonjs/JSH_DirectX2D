@@ -21,7 +21,7 @@ namespace JSH
 	{
 	}
 
-	void MeshRenderer::FixedUpdate()
+	void MeshRenderer::LateUpdate()
 	{
 	}
 

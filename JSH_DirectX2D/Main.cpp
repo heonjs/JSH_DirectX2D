@@ -4,6 +4,9 @@
 #include "framework.h"
 #include "JSH_DirectX2D.h"
 #include "Application.h"
+#include "..\\JSH_Windows\\LoadScene.h"
+
+#include <DirectXTex.h>
 
 #define MAX_LOADSTRING 100
 

@@ -20,8 +20,8 @@ namespace JSH
 		virtual void Update();
 
 		//  This is where application-wide updates get executed in a fixed timestep based manner. 
-		//  RenderPath::FixedUpdate is also called from here for the active component
-		virtual void FixedUpdate();
+		//  RenderPath::LateUpdate is also called from here for the active component
+		virtual void LateUpdate();
 
 		//  This is where application-wide rendering happens to offscreen buffers. 
 		//  RenderPath::Render is also called from here for the active component

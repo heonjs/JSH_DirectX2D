@@ -26,6 +26,7 @@ using namespace DirectX::PackedVector;
 namespace JSH::math
 {
     struct Vector2;
+    struct Vector3;
     struct Vector4;
     struct Matrix;
     struct Quaternion;

@@ -1,32 +1,35 @@
 #pragma once
+#include "Component.h"
 #include "JSHEnums.h"
 #include "Entity.h"
 #include "JSHMath.h"
 
 namespace JSH
 {
-	using namespace enums;
-	using namespace math;
-
 	class GameObject;
-	class Component : public Entity
+	class Script : public Entity
 	{
-	public:
+	public :
 		friend GameObject;
 
-		Component(COMPONENTTYPE type);
-		virtual ~Component();
+		Script();
+		virtual ~Script();
 
 		virtual void Initialize() = 0;
 		virtual void Update() = 0;
 		virtual void LateUpdate() = 0;
 		virtual void Render() = 0;
 
-		GameObject* GetOwner() { return mOwner; }
-		UINT GetUpdateOrder() { return (UINT)mType; }
+		GameObject* GetOwner()
+		{
+			return mOwner;
+		}
+		void SetOwner(GameObject* obj)
+		{
+			mOwner = obj;
+		}
 
-	private:
-		const COMPONENTTYPE mType;
+	private :
 		GameObject* mOwner;
 	};
 }

@@ -18,7 +18,7 @@ namespace JSH
 	void Application::Run()
 	{
 		Update();
-		FixedUpdate();
+		LateUpdate();
 		Render();
 	}
 
@@ -39,7 +39,7 @@ namespace JSH
 		SceneManager::Update();
 	}
 
-	void Application::FixedUpdate()
+	void Application::LateUpdate()
 	{
 
 	}

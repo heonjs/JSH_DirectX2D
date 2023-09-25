@@ -13,12 +13,6 @@ namespace JSH
 
 	}
 
-	void GameObject::AddComponent(Component* component)
-	{
-		int myOrder = component->GetUpdateOrder();
-		mComponents[myOrder] = component;
-		mComponents[myOrder]->mOwner = this;
-	}
 	void GameObject::Initialize()
 	{
 		for (Component* comp : mComponents)
@@ -39,14 +33,14 @@ namespace JSH
 			comp->Update();
 		}
 	}
-	void GameObject::FixedUpdate()
+	void GameObject::LateUpdate()
 	{
 		for (Component* comp : mComponents)
 		{
 			if (comp == nullptr)
 				continue;
 
-			comp->FixedUpdate();
+			comp->LateUpdate();
 		}
 	}
 	void GameObject::Render()

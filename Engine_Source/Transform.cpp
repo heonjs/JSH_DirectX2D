@@ -23,7 +23,7 @@ namespace JSH
 	{
 	}
 
-	void Transform::FixedUpdate()
+	void Transform::LateUpdate()
 	{
 	}
 

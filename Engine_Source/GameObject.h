@@ -1,6 +1,7 @@
 #pragma once
 #include "Entity.h"
 #include "Component.h"
+#include "Script.h"
 
 namespace JSH
 {
@@ -17,7 +18,28 @@ namespace JSH
 		GameObject();
 		virtual ~GameObject();
 
-		void AddComponent(Component* component);
+		template <typename T>
+		T* AddComponent()
+		{
+			T* component = new T();
+			Component* comp = dynamic_cast<Component*>(component);
+			if (comp)
+			{
+				int myOrder = comp->GetUpdateOrder();
+				mComponents[myOrder] = comp;
+				mComponents[myOrder]->mOwner = this;
+			}
+
+			Script* script = dynamic_cast<Script*>(component);
+			if (script != nullptr)
+			{
+				mScripts.push_back(script);
+				script->SetOwner(this);
+			}
+
+			return component;
+		}
+
 		template <typename T>
 		T* GetComponent()
 		{
@@ -35,11 +57,12 @@ namespace JSH
 
 		virtual void Initialize();
 		virtual void Update();
-		virtual void FixedUpdate();
+		virtual void LateUpdate();
 		virtual void Render();
 
 	private:
 		eState mState;
 		std::vector<Component*> mComponents;
+		std::vector<Script*> mScripts;
 	};
 }

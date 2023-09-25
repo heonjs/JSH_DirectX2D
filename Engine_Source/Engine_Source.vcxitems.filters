@@ -58,6 +58,15 @@
     <Filter Include="Engine\Scene\SceneManager">
       <UniqueIdentifier>{8c07db54-9736-4949-8b43-9a75cc4bf7d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Component\Transform">
+      <UniqueIdentifier>{249c3761-662c-4178-80da-008f7d5da2bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\MeshRenderer">
+      <UniqueIdentifier>{b5e2dd7a-9e17-4838-bd3c-d750894debba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Script">
+      <UniqueIdentifier>{167782d6-3c80-4f23-af4d-6b0b3576e652}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Canvas.h">
@@ -66,19 +75,13 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h">
       <Filter>Engine\Common</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)Enums.h">
+    <ClInclude Include="$(MSBuildThisFileDirectory)JSHEnums.h">
       <Filter>Engine\Common</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Engine.h">
       <Filter>Engine\Common</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Component.h">
-      <Filter>Engine\Component</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)MeshRenderer.h">
-      <Filter>Engine\Component</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)Transform.h">
       <Filter>Engine\Component</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h">
@@ -138,15 +141,18 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Scene.h">
       <Filter>Engine\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Transform.h">
+      <Filter>Engine\Component\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MeshRenderer.h">
+      <Filter>Engine\Component\MeshRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Script.h">
+      <Filter>Engine\Component\Script</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Component.cpp">
-      <Filter>Engine\Component</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)MeshRenderer.cpp">
-      <Filter>Engine\Component</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Transform.cpp">
       <Filter>Engine\Component</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp">
@@ -199,6 +205,15 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Scene.cpp">
       <Filter>Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Transform.cpp">
+      <Filter>Engine\Component\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MeshRenderer.cpp">
+      <Filter>Engine\Component\MeshRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Script.cpp">
+      <Filter>Engine\Component\Script</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

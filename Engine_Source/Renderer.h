@@ -1,5 +1,5 @@
 #pragma once
-#include "Enums.h"
+#include "JSHEnums.h"
 #include "CommonInclude.h"
 #include "Engine.h"
 #include "JSHMath.h"
